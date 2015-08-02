@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # Copyright (c) 2012 Robie Basak
 #
@@ -39,6 +39,10 @@ import sqlalchemy
 import sqlalchemy.ext.declarative
 import sqlalchemy.orm
 
+# encoding=utf8  
+import sys  
+reload(sys)  
+sys.setdefaultencoding("ISO-8859-1")
 
 # There is a lag between an archive being created and the archive
 # appearing on an inventory. Even if the inventory has an InventoryDate
